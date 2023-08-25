@@ -1,0 +1,20 @@
+dbt_build_model_demo:
+  target: databrick
+  outputs:
+    databrick:
+      catalog: dbt_demo
+      host: dbc-6b8a5c97-3907.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/72d63c99c9d26a32
+      schema: stg
+      threads: 4
+      token: dapi6681bfeb1598982cef29ca3cda14e4a2
+      type: databricks
+    redshift:
+      dbname: dev
+      host: redshift-cluster-1.caysi7ehlfkv.ap-southeast-1.redshift.amazonaws.com
+      password: Ducph4010
+      port: 5439
+      schema: stg
+      threads: 4
+      type: redshift
+      user: awsuser
