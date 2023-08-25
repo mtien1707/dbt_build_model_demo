@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: stripe
+    description: A clone of a Databricks application database.
+    database: dbt_demo 
+    schema: stripe
+    tables:
+      - name: raw_payments
+        description: Raw payments data.
+        columns:
+          - name: id
+            description: Primary key for payments data.
+            tests:
+              - unique
+              - not_null
