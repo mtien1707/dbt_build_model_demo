@@ -23,7 +23,7 @@ with
             {% endfor -%}
         from payments 
         left join orders using (order_id) 
-        where orders.status = 'success'
+        where orders.status IN ('completed')
         group by 1
     )
 

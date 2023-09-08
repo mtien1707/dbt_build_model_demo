@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: myspectrum_schema
+    description: A clone of a Databricks application database.
+    database: dev 
+    schema: myspectrum_schema
+    tables:
+      - name: involved_party
+        description: Raw customers data.
+        columns:
+          - name: ip_id
+            description: Primary key for customers data.
+            tests:
+              - unique
+              - not_null

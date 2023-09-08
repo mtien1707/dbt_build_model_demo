@@ -17,7 +17,7 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('customers')
+              to: ref('dim_customers')
               field: customer_id
 
       - name: order_date

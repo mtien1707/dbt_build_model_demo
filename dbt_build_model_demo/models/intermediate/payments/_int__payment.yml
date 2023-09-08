@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: int_payments_pivoted
+  - name: int_payments__pivoted
     description: This table has basic information about payments pivoted
 
     columns:

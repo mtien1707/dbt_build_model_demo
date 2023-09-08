@@ -1,9 +1,6 @@
--- stg_jaffle_shop__customers.sql
-{{
-  config(
-    schema='core'
-  )
-}}
+{# {{ config(materialized='view') , indexes=[{'columns': ['customer_id']}] }} #}
+
+
 with
 
 customers as (
